@@ -65,12 +65,12 @@ class _MyAppState extends State<MyApp> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Add 2",
+            icon: Icon(Icons.business),
+            label: "Business",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "add 3",
+            icon: Icon(Icons.school),
+            label: "School",
           ),
         ],
         onTap: _onItemTapped,
