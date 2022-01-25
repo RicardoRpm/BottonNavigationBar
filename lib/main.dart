@@ -41,10 +41,15 @@ class _MyAppState extends State<MyApp> {
       'Index 2: School',
       style: optionStyle,
     ),
+    Text(
+      'Index 3: Settings',
+      style: optionStyle,
+    ),
   ];
 
   void _onItemTapped(int index) {
     setState(() {
+      print(index);
       _selected = index;
     });
   }
@@ -63,14 +68,22 @@ class _MyAppState extends State<MyApp> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",
+            backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.business),
             label: "Business",
+            backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
             label: "School",
+            backgroundColor: Colors.purple,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+            backgroundColor: Colors.pink,
           ),
         ],
         onTap: _onItemTapped,
